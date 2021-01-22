@@ -1,11 +1,71 @@
-<div>
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+{% load static %}
+<html>
 
-{% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
+<head>
+    <title>Django Girls blog</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <h1>P O L Y G O N</h1>
+
+    <h2>Animal Art Museum</h2>
+
+
+    <div class="row">
+        <div class="column">
+            <h2>Description</h2>
+            {% for post in posts %}
+            <div>
+                <h3 class="title">{{ post.title }} </h3>
+                <p class="date">published: {{ post.published_date }}</p>
+                <p class="text">{{ post.text|linebreaksbr }}</p>
+                <br><br><br>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="column">
+            <h2>Pictures</h2><br>
+            <img src="https://static.vecteezy.com/system/resources/previews/000/696/353/non_2x/collection-of-geometric-polygon-animals-vector.jpg"
+                alt="" width="250px" height="270px">
+            <h2>Butterfly</h2>
+            <img src="https://static.vecteezy.com/system/resources/previews/001/824/137/non_2x/geometric-polygonal-butterfly-vector.jpg"
+                alt="" width="250px" height="270px">
+            <h2>The jaguar</h2>
+            <img src="https://image.freepik.com/free-vector/panter-made-polygons-background_1009-61.jpg" alt=""
+                width="250px" height="270px">
+            <h2>Elephant</h2>
+            <img src="https://image.freepik.com/free-vector/elephant-made-polygons-background_1009-57.jpg" alt=""
+                width="250px" height="270px">
+            <h2>Gull</h2>
+            <img src="https://static.vecteezy.com/system/resources/previews/001/824/351/non_2x/geometric-polygonal-eagle-vector.jpg"
+                alt="" width="250px" height="270px">
+            <h2>Shark</h2>
+            <img src="https://static.vecteezy.com/system/resources/previews/001/824/116/non_2x/geometric-polygonal-shark-vector.jpg"
+                alt="" width="250px" height="270px">
+            <h2>rooster</h2>
+            <img src="https://static.displate.com/280x392/displate/2020-02-11/690844588038799c07d5ab6cdf185ba3_3e6eaa19600c5b6e8c8e85870de07fc5.jpg"
+                alt="" width="250px" height="270px">
+            <h2>cat</h2>
+            <img src="https://www.maxpixel.net/static/photo/1x/Animal-Art-Illustration-Low-Polygon-Vector-Poly-3295856.png"
+                alt="" width="250px" height="270px">
+            <h2>Reindeer</h2>
+            <img src="https://image.freepik.com/free-vector/deer-made-polygons-background_1009-62.jpg" alt=""
+                width="250px" height="270px">
+            <h2>Finch</h2>
+            <img src="https://images.fineartamerica.com/images-medium-large-5/set-of-abstract-geometric-colorful-birds-pika111.jpg"
+                alt="" width="250px" height="270px">
+        </div>
+
     </div>
-{% endfor %}
+    </div>
+
+</body>
+
+</html>

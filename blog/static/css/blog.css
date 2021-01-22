@@ -1,0 +1,66 @@
+body {
+  background-image: url("./wallpapersden.com_multiply-polygon-art_3840x2160.jpg");
+  background-repeat: no-repeat;
+background-position: center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 100px;
+    text-transform: uppercase;
+	background: linear-gradient(to right, #ff5151 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+
+  .title{
+    color: rgb(162, 244, 247);
+    margin-left: 18px;
+    font-size: 40px;
+  }
+  .date{
+    color: rgb(255, 255, 255);
+    margin-left: 18px;
+    font-size: 15px;
+  }
+  .text{
+    color: rgb(252, 251, 217);
+    margin-left: 18px;
+    font-size: 20px;
+  }
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+
+
