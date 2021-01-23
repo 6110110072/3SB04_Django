@@ -119,5 +119,5 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/home/6110110072/myproject/static'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
